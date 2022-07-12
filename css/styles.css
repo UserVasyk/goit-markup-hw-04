@@ -39,7 +39,7 @@ body {
 .logo {
   color: var(--brand-color-2);
   text-decoration: none;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -83,6 +83,7 @@ body {
 .hero {
   background-color: var(--secondary-bg-color);
   text-align: center;
+  padding: 200px 0;
 }
 .hero-title {
   color: var(--primary-bg-color);
@@ -146,6 +147,7 @@ body {
 /* footer */
 .footer {
   background-color: var(--secondary-bg-color);
+  padding: 60px 0;
 }
 .logo-white {
   color: var(--primary-bg-color);
@@ -207,8 +209,8 @@ body {
 .header-list-info {
   display: flex;
 }
-.header-list-nav .item:not(:last-child) {
-  margin-right: 50px;
+.header-list-nav {
+  gap: 50px;
 }
 .container-header {
   display: flex;
@@ -216,7 +218,6 @@ body {
 }
 .header-list-info .item:not(:last-child) {
   margin-right: 50px;
-  margin-left: 331px;
 }
 
 .container {
@@ -236,13 +237,13 @@ body {
 }
 .feature-list {
   display: flex;
+  gap: 30px;
 }
 img {
   display: block;
 }
 .feature-list .item {
   width: 270px;
-  margin-right: 30px;
 }
 .feature-list .item:last-child {
   margin-right: 0;
@@ -257,24 +258,8 @@ img {
 }
 .portfolio-list {
   display: flex;
-
+  gap: 30px;
   flex-wrap: wrap;
-}
-.portfolio-item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-/* .portfolio-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-} */
-.portfolio-item:nth-child(3n) {
-  margin-right: 0;
-}
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .container-portfolio {
@@ -288,25 +273,24 @@ img {
 .filter-list {
   display: flex;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 
 .container-flex {
   display: flex;
 }
 .section-title {
-  margin: 0 auto 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .feature {
   padding-bottom: 0;
 }
 .list-retreat {
   display: flex;
+  gap: 30px;
 }
-.list-retreat .item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .container-team {
   background: #ffffff;
   text-align: center;
@@ -321,7 +305,6 @@ img {
   margin-bottom: 10px;
 }
 .logo-footer {
-  margin-top: 60px;
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -332,10 +315,7 @@ img {
 .list-footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
-.list-footer .item:last-child {
-  margin-bottom: 60px;
-}
 
-.hero-container {
-  padding: 200px 0;
+.header-list-info {
+  margin-left: auto;
 }
