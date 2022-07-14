@@ -39,7 +39,7 @@ body {
 .logo {
   color: var(--brand-color-2);
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -174,6 +174,11 @@ body {
 .filter-button:focus {
   color: var(--primary-bg-color);
   background-color: var(--brand-color-2);
+  box-shadow: 0px 2px 2px 0px hsla(0, 0%, 0%, 0.12);
+
+  box-shadow: 0px 1px 2px 0px hsla(0, 0%, 0%, 0.08);
+
+  box-shadow: 0px 3px 1px 0px hsla(0, 0%, 0%, 0.1);
 }
 /* Для постерів у портфоліо */
 .portfolio-link {
@@ -290,7 +295,13 @@ img {
   display: flex;
   gap: 30px;
 }
+.list-retreat .item {
+  box-shadow: 0px 2px 1px 0px hsla(0, 0%, 0%, 0.2);
 
+  box-shadow: 0px 1px 1px 0px hsla(0, 0%, 0%, 0.14);
+
+  box-shadow: 0px 1px 3px 0px hsla(0, 0%, 0%, 0.12);
+}
 .container-team {
   background: #ffffff;
   text-align: center;
@@ -318,4 +329,22 @@ img {
 
 .header-list-info {
   margin-left: auto;
+}
+.portfolio-item:hover {
+  box-shadow: 1px 4px 6px 0px hsla(0, 0%, 0%, 0.16);
+
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.06);
+
+  box-shadow: 0px 1px 1px 0px hsla(0, 0%, 0%, 0.12);
+}
+.clients {
+  background-color: var(--primary-bg-color);
+}
+.clients-title {
+  color: var(--brand-color-1);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
 }
