@@ -262,7 +262,7 @@ img {
 }
 
 .filter-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 .filter-button {
   border-radius: 4px;
@@ -355,4 +355,7 @@ img {
 
 .link:hover .icon {
   fill: #188ce8;
+}
+.icon-feature {
+  fill: red;
 }
