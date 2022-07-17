@@ -357,7 +357,8 @@ img {
   fill: rgba(117, 117, 117, 1);
 }
 
-.link:hover .icon-info {
+.link:hover .icon-info,
+.link:focus .icon-info {
   fill: #188ce8;
 }
 .icon-feature {
@@ -375,7 +376,8 @@ img {
 .icon-team {
   fill: #afb1b8;
 }
-.link-social:hover .icon-team {
+.link-social:hover .icon-team,
+.link-social:focus .icon-team {
   fill: var(--primary-bg-color);
 }
 
@@ -416,10 +418,12 @@ img {
 .clients-list .item {
   width: calc((100% - 150px) / 6);
 }
-.link-clients:hover .clients-container {
+.link-clients:hover .clients-container,
+.link-clients:focus .clients-container {
   border: 1px solid #2196f3;
 }
-.link-clients:hover .clients-icon {
+.link-clients:hover .clients-icon,
+.link-clients:focus .clients-icon {
   fill: var(--brand-color-2);
 }
 .main-list-footer {
@@ -436,7 +440,8 @@ img {
 .item-logo {
   margin-right: 70px;
 }
-.portfolio-link:hover .hover-container {
+.portfolio-link:hover .hover-container,
+.portfolio-link:focus .hover-container {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -447,6 +452,7 @@ img {
 .item-footer-icon .link-social {
   background-color: #ffffff1a;
 }
-.link-social:hover {
+.link-social:hover,
+.link-social:focus {
   background-color: var(--brand-color-2);
 }
