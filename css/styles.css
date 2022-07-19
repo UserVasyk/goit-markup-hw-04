@@ -10,6 +10,7 @@
   --secondary-bg-color: #2f303a;
   --tertiary-bg-color: #f5f4fa;
   --paragraph-color: #757575;
+  --icons-color: #afb1b8;
 }
 .list {
   margin: 0;
@@ -71,7 +72,6 @@ body {
 .header-info-link:hover,
 .header-info-link:focus {
   color: var(--brand-color-2);
-  fill: var(--brand-color-2);
 }
 .header-list-nav {
   color: var(--brand-color-1);
@@ -88,7 +88,6 @@ body {
   padding: 200px 0;
 }
 .overlay {
-  height: 600px;
   max-width: 1600px;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -192,7 +191,8 @@ body {
 }
 /* Для постерів у портфоліо */
 .portfolio-link {
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 .portfolio-title {
   color: var(--brand-color-1);
@@ -354,13 +354,9 @@ img {
 }
 .icon-info {
   margin-right: 10px;
-  fill: rgba(117, 117, 117, 1);
+  fill: currentColor;
 }
 
-.link:hover .icon-info,
-.link:focus .icon-info {
-  fill: #188ce8;
-}
 .icon-feature {
   width: 70px;
   height: 70px;
@@ -368,16 +364,17 @@ img {
   align-items: center;
 }
 .container-icons {
-  background-color: #f5f4fa;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary-bg-color);
+  padding: 25px;
   margin-bottom: 30px;
   max-height: 120px;
 }
-.icon-team {
-  fill: #afb1b8;
-}
-.link-social:hover .icon-team,
-.link-social:focus .icon-team {
+
+.link-social:hover .icon,
+.link-social:focus .icon {
   fill: var(--primary-bg-color);
 }
 
@@ -399,35 +396,38 @@ img {
   align-content: center;
   border-radius: 50%;
   padding: 12px;
-}
-.clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  fill: var(--icons-color);
 }
 .clients-icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
-.clients-container {
-  padding: 16px 32px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-.clients-list .item {
+
+.card-set .clients-item {
   width: calc((100% - 150px) / 6);
 }
-.link-clients:hover .clients-container,
-.link-clients:focus .clients-container {
+.link-clients:hover,
+.link-clients:focus {
   border: 1px solid #2196f3;
 }
 .link-clients:hover .clients-icon,
 .link-clients:focus .clients-icon {
   fill: var(--brand-color-2);
 }
+.link-clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
 .main-list-footer {
   display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
   align-items: baseline;
 }
 .footer-title-info {
@@ -437,20 +437,16 @@ img {
 
   color: #ffffff;
 }
-.item-logo {
-  margin-right: 70px;
-}
-.portfolio-link:hover .hover-container,
-.portfolio-link:focus .hover-container {
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.icon-footer {
-  fill: var(--primary-bg-color);
-}
-.item-footer-icon .link-social {
+.footer .link-social {
   background-color: #ffffff1a;
+  fill: var(--primary-bg-color);
 }
 .link-social:hover,
 .link-social:focus {
